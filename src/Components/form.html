@@ -1,0 +1,163 @@
+<link href="../CSS/bootstrap.min.css" rel="stylesheet" />
+<link href="../CSS/form.css" rel="stylesheet" />
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="background-color: teal;">
+    <a class="logoAnchor navbar-brand" href="./index.html"><strong><big>Devathon</big></strong></a>
+    <div style="float: right;" class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="./profileList.html">Profiles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./form.html">Build a Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="ml-2 btn btn-outline-primary nav-link" href="./login.html">Log In</a>
+            </li>
+            <li class="nav-item">
+                <a class="ml-2 btn btn-outline-secondary nav-link" href="./register.html">Register</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="card mt-5" style="max-width: 80%; margin: 20px auto;">
+    <div class="card-body justify-content-center main-body">
+        <h2 class="card-title text-center mb-4 mt-2">Complete the form below to post your profile</h2>
+        <form action="" method="POST">
+            <div class="form-group row">
+                <label for="name" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" crequired>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="batch" class="col-sm-2 col-form-label">Research Areas</label>
+                <div class="col-sm-10">
+                    <textarea type="textarea" value="AoI" name="AoI" placeholder="Areas of Interest"
+                        class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <details><summary>Educational Qualification</summary>
+                    <div class="col-sm-10">
+                        <label for="degree" class="col-sm-2 col-form-label">Degree</label>
+                        <select type="select" name="degree" placeholder="Degree" class="form-control" required>
+                            <option value="select">
+                                Degree
+                            </option>
+                            <option value="B.Tech/B.Sc">
+                                B.Tech/B.Sc</option>
+                            <option value="M.Tech/M.Sc">
+                                M.Tech/M.Sc</option>
+                            <option value="Ph.D">
+                                Ph.D</option>
+                        </select>
+                    </div>
+                    <div class="form-group row">
+                        <label for="subject" class="col-sm-2 col-form-label">Subject</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="subject" name="subject" value="Subject of Study" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="company" class="col-sm-2 col-form-label">University</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" value="University" list="suggestions" id="suggestions"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="year" class="col-sm-2 col-form-label">Batch of</label>
+                        <div class="col-sm-10">
+                            <input type="text" type="year" name="year" placeholder="Year"
+                                class="form-control" required>
+                        </div>
+                    </div>
+                </details>
+            </div>
+            <div class="form-group">
+                <details>
+                    <summary>Courses Taught</summary>
+                    <textarea type="textarea" value="courses" name="aboutOT"
+                        placeholder="List the courses that you have tought or are teaching currently"
+                        class="form-control"></textarea>
+                </details>
+            </div>
+            <div class="form-group">
+                <details>
+                    <summary>Thesis Supervision</summary>
+                    <textarea type="textarea" value="thesis" name="aboutOT1"
+                        placeholder="List thesis being supervised by you" class="form-control"></textarea>
+                </details>
+            </div>
+            <div class="form-group">
+                <details>
+                    <summary>Sponsored Projects</summary>
+                    <textarea type="textarea" value="projects" name="aboutOT2"
+                        placeholder="Sponsored Projects" class="form-control"></textarea>
+                    <div class="ml-2">
+                        <details class="ml-2">
+                            <summary>Links related to Sponsored Projects</summary>
+                            <input type="url" value="projects" name="projects" class="form-control">
+                        </details>
+                    </div>
+                </details>
+            </div>
+            <div class="form-group">
+                <details>
+                    <summary>Patents</summary>
+                    <textarea type="textarea" value="patents" name="Patents"
+                        placeholder="Patents" class="form-control"></textarea>
+                    <div class="ml-2">
+                        <details class="ml-2">
+                            <summary>Links related to patents</summary>
+                            <input type="url" value="patent" name="patent"
+                            class="form-control">
+                        </details>
+                    </div>
+                </details>
+            </div>
+            <div class="form-group">
+                <details>
+                    <summary>Publications</summary>
+                    <textarea type="textarea" value="publications" name="Publications" placeholder="Publications" class="form-control"></textarea>
+                    <div class="ml-2">
+                        <details class="ml-2">
+                            <summary>Links related to publications</summary>
+                            <input type="url" value="publications" name="publications"
+                                placeholder="Link for publications" class="form-control">
+                        </details>
+                    </div>
+                </details>
+            </div>
+            <div class="form-group">
+                <details>
+                    <summary>Awards/Honours</summary>
+                    <textarea type="textarea" value="awards" name="awards"
+                        placeholder="Awards/Honours"
+                        class="form-control"></textarea>
+                </details>
+            </div>
+
+            <button class="btn submit view-btn mt-3">
+                Submit
+            </button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <div class="container" style="text-align: center">
+        <p>
+            Copyright © 2021 Devathon
+        </p>
+        <small style="font-weight: 550">Made by
+            <a target="_blank" href="https://www.linkedin.com/in/abhishek-upadhayayula-a541ba1b8/">Abhishek</a></small>
+    </div>
+</footer>

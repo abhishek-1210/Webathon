@@ -1,0 +1,72 @@
+<link href="../CSS/bootstrap.min.css" rel="stylesheet" />
+<link href="../CSS/App.css" rel="stylesheet" />
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="background-color: teal">
+    <a class="logoAnchor navbar-brand" href="./index.html"><strong><big>Devathon</big></strong></a>
+    <div style="float: right;" class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="./profileList.html">Profiles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./form.html">Build a Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="ml-2 btn btn-outline-primary nav-link" href="./login.html">Log In</a>
+            </li>
+            <li class="nav-item">
+                <a class="ml-2 btn btn-outline-secondary nav-link" href="./register.html">Register</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="card mt-5" style="max-width: 35rem; margin: 20px auto;">
+    <div class="card-body justify-content-center">
+        <h2 class="card-title text-center mb-4 mt-2">Create Your Account!</h2>
+        <form action="" method="POST">
+            <div class="form-group">
+                <label for="first_name">First Name</label>
+                <input type="text first_name" type="text" name="first_name" placeholder="First Name" required=""
+                    class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="last_name">Last Name</label>
+                <input type="text last_name" type="text" name="last_name" placeholder="Last Name" required=""
+                    class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" placeholder="Email Address" required="" class="form-control" id="id_email">
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text username" name="username" required="" class="form-control" id="id_username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password1" placeholder="Create a password" required=""
+                    class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="password">Confirm Password</label>
+                <input type="password" name="password2" placeholder="Re-enter Password" required=""
+                    class="form-control">
+            </div>
+            <input class="btn submit view-btn mt-3" type="Submit" value="SignUp">
+            <p class="card-text register-text mb-2">Already have an account? <a href="./login.html"><strong>Login Now!</strong></a>
+            </p>
+
+        </form>
+    </div>
+</div>
+
+<footer>
+    <div class="container" style="text-align: center">
+        <p>
+            Copyright © 2021 Devathon
+        </p>
+        <small style="font-weight: 550">Made by
+            <a target="_blank" href="https://www.linkedin.com/in/abhishek-upadhayayula-a541ba1b8/">Abhishek</a></small>
+    </div>
+</footer>

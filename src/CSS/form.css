@@ -1,0 +1,48 @@
+.view-btn {
+  padding: 7px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: teal;
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid teal;
+  width: 100%;
+}
+
+.view-btn:hover {
+  color: white;
+  border-radius: 15px;
+  border: 1px solid teal;
+  background-color: teal;
+  outline: none;
+  box-shadow: none;
+}
+
+.view-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+textarea:focus {
+  outline: teal;
+  border-color: teal;
+}
+
+.register-text {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    margin: 20px !important;
+  }
+}
