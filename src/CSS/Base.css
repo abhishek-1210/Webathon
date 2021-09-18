@@ -1,0 +1,15 @@
+.logoAnchor:hover,
+.logoAnchor {
+  text-decoration: none;
+  color: #76b852;
+}
+
+@media only screen and (max-width: 975px) {
+  .btn {
+    margin: 10px auto;
+  }
+
+  .nav-link {
+    text-align: center;
+  }
+}
