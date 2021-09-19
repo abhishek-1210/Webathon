@@ -5,7 +5,7 @@
 .logoAnchor:hover,
 .logoAnchor {
   text-decoration: none;
-  color: black;
+  color: teal;
 }
 
 @media only screen and (max-width: 975px) {
@@ -103,6 +103,7 @@ a:focus {
 
 a:hover {
   color: black;
+  font-weight: bold;
 }
 
 .view-btn {
